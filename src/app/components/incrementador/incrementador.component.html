@@ -6,7 +6,8 @@
             <i class="mdi mdi-minus"></i>
         </button>
     </div>
-    <input type="number" min="0" max="100" class="form-control" [(ngModel)]="progreso">
+    <input type="number" min="0" max="100" class="form-control" (ngModelChange)="onChange($event)"
+        [(ngModel)]="value" [ngClass]="{'is-invalid': value > 100 || value < 0}">
     <div class="input-group-btn">
         <button [ngClass]="btnClass" type="button" (click)=changeValue(5)>
             <i class="mdi mdi-plus"></i>
