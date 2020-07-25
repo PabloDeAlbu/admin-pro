@@ -2,13 +2,13 @@
 
 <div class="input-group">
     <div class="input-group-btn">
-        <button class="btn btn-secondary" type="button" (click)=cambiarValor(-5)>
+        <button [ngClass]="btnClass" type="button" (click)=changeValue(-5)>
             <i class="mdi mdi-minus"></i>
         </button>
     </div>
-    <input type="text" class="form-control" [(ngModel)]="progreso">
+    <input type="number" min="0" max="100" class="form-control" [(ngModel)]="progreso">
     <div class="input-group-btn">
-        <button class="btn btn-secondary" type="button" (click)=cambiarValor(5)>
+        <button [ngClass]="btnClass" type="button" (click)=changeValue(5)>
             <i class="mdi mdi-plus"></i>
         </button>
     </div>
