@@ -11,6 +11,7 @@ import { ProgressComponent } from './progress/progress.component';
 
 
 import { PAGES_ROUTES } from './pages.routes';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import { PAGES_ROUTES } from './pages.routes';
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
+        AccountSettingsComponent,
        ],
        exports: [
         PagesComponent,
